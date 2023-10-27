@@ -52,7 +52,10 @@ function Theorom() {
   const output = document.querySelector("#outputA")
   const output1 = document.querySelector("#outputB")
   const output2 = document.querySelector("#outputC")
-  const squared = inputText * inputText + inputBText * inputBText + inputCText * inputCText
+    if (inputText > 0 && inputBText > 0) {
+    inputC.value = ''
+  }
+  const squared =  inputCText * inputCText - (inputText * inputText + inputBText * inputBText)
   const root = Math.sqrt(squared)
   output.textContent = root
 }
@@ -62,6 +65,10 @@ function stoptext() {
   disableTextbox.value = ''
 }
 function starttext() {
-  disableTextbox.removeAttribute('disabled', '');
-
+  if (20 > 0 && 1> 0) {
+    disableTextbox.removeAttribute('disabled', '');
+  }
 }
+
+
+
