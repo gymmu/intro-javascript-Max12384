@@ -54,10 +54,63 @@
         <p id="counter" > 1</p>
       </div>
       <div class="center">
-        <button onclick="incrementCounter()">Counter</button>
+        <button onclick="decrementCounter()">Decrease</button>
+        <button onclick="resetCounter()">Reset</button>
+        <button onclick="incrementCounter()">Increase</button>
       </div>
     </section>
+
+
+
+
+    <section>
+      <h3>Benutzer informieren</h3>
+      <div class="content">
+        <input id="input"></input>
+        <pre id="output"></pre>
+      </div>
+      <div class="center">
+        <button onclick="writeText()">Write!</button>
+      </div>
+    </section>
+
+    
+    <section>
+      <h3>Calculate side of triangle</h3>
+    <div class="center">
+      A² + B² = C² 
+    </div>
+      <div class="content">     
+        A <input id="inputA" > </p>
+        B <input id="inputB" > </p>
+        C <input id="inputC" disabled> </p>
+        <pre id="outputA"></pre>
+        <pre id="outputB"></pre>
+        <pre id="outputC"></pre>       
+      </div>
+      <div class="center">
+        <button onclick="Theorom()">Solve!</button>
+      </div>
+    </section>
+
+    
+    <section>
+      <h3>Disable Textbox</h3>
+      <div class="content">
+        <input id="disableTextbox" > </p>
+      </div>
+      <div class="center">
+        <button onclick="stoptext()">Disable Textbox</button>
+        <button onclick="starttext()">Enable Textbox</button>
+      </div>
+    </section>
+
+
   </main>
+
+  <main>
+
+  
 
 
   <script type="module" src="tests/run.js"></script>
